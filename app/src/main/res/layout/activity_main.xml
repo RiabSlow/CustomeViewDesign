@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:animateLayoutChanges="true">
+
+    <CheckBox
+        android:id="@+id/box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multiple Item selectable"
+        android:layout_gravity="top|start"/>
+
+    <CheckBox
+        android:id="@+id/box2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gravity Center"
+        android:layout_gravity="top|start"/>
+
+    <SeekBar
+        android:id="@+id/seekbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="50"
+        />
+
+    <SeekBar
+        android:id="@+id/seekbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="50"
+        />
+
+    <com.example.sakkar.canvaspainttest.CustomLayout
+        android:id="@+id/item_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        app:item_gravity="CENTER"
+        android:background="@android:color/darker_gray"
+        app:item_border_color="@android:color/white"
+        app:item_clicked_background="@android:color/white"
+        app:item_clicked_text_color="@android:color/darker_gray"
+        app:item_border_width="2dp"
+        app:item_text_size="16sp"
+        app:item_selection_state="MULTIPLE"
+        />
+
+</LinearLayout>

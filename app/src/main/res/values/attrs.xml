@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyLayout">
+        <attr name="count" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomLayout">
+        <attr name="item_gravity" format="enum">
+            <enum name="CENTER" value="1"/>
+            <enum name="START" value="0"/>
+        </attr>
+        <attr name="item_border_color" format="color"/>
+        <attr name="item_background" format="color"/>
+        <attr name="item_clicked_background" format="color"/>
+        <attr name="item_clicked_border_color" format="color"/>
+        <attr name="item_text_color" format="color"/>
+        <attr name="item_clicked_text_color" format="color"/>
+        <attr name="item_text_size" format="dimension"/>
+        <attr name="item_border_width" format="dimension"/>
+        <attr name="item_horizontal_spacing" format="dimension"/>
+        <attr name="item_vertical_spacing" format="dimension"/>
+        <attr name="item_width_padding" format="dimension"/>
+        <attr name="item_height_padding" format="dimension"/>
+        <attr name="item_selection_state" format="enum">
+            <enum name="SINGLE" value="1"/>
+            <enum name="MULTIPLE" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CustomTextView">
+        <attr name="text" format="string"/>
+    </declare-styleable>
+</resources>
